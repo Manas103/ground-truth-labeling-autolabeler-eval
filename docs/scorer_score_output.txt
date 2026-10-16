@@ -1,0 +1,11 @@
+iou_threshold=0.3000
+close_proximity: precision=0.0180 recall=0.8966 tp=52 fp=2833 fn=6
+crossing_paths: precision=0.1316 recall=0.5263 tp=30 fp=198 fn=27
+cut_in: precision=0.5056 recall=0.8333 tp=45 fp=44 fn=9
+cyclist_vehicle_close_approach: precision=0.2727 recall=0.7857 tp=33 fp=88 fn=9
+hard_brake: precision=0.2270 recall=0.8235 tp=42 fp=143 fn=9
+high_acceleration: precision=0.1946 recall=0.7826 tp=36 fp=149 fn=10
+lane_change: precision=0.1417 recall=0.8710 tp=54 fp=327 fn=8
+merge: precision=0.6020 recall=0.9077 tp=59 fp=39 fn=6
+unprotected_left: precision=0.0400 recall=0.0800 tp=4 fp=96 fn=46
+OVERALL: precision=0.0831 recall=0.7320 tp=355 fp=3917 fn=130

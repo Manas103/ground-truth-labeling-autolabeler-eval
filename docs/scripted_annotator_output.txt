@@ -1,0 +1,4 @@
+annotator_1: 485 labels across 600 segments
+annotator_2: 118 labels across 120 double-labeled segments
+double_labeled_segment_ids_count=120
+wrote double-labeled segment id list to data\double_labeled_segment_ids.json

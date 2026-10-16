@@ -1,0 +1,41 @@
+Running main() from /mnt/c/Users/Manas/Downloads/Auto Job Applier/Total Job Application process flow/projects/ground-truth-labeling-autolabeler-eval/scorer/build-asan/_deps/googletest-src/googletest/src/gtest_main.cc
+[==========] Running 13 tests from 3 test suites.
+[----------] Global test environment set-up.
+[----------] 2 tests from ReadEventsTsv
+[ RUN      ] ReadEventsTsv.ParsesHeaderAndRows
+[       OK ] ReadEventsTsv.ParsesHeaderAndRows (1 ms)
+[ RUN      ] ReadEventsTsv.EmptyBodyProducesNoEvents
+[       OK ] ReadEventsTsv.EmptyBodyProducesNoEvents (0 ms)
+[----------] 2 tests from ReadEventsTsv (2 ms total)
+
+[----------] 3 tests from TemporalIou
+[ RUN      ] TemporalIou.IdenticalIntervalsIsOne
+[       OK ] TemporalIou.IdenticalIntervalsIsOne (0 ms)
+[ RUN      ] TemporalIou.DisjointIntervalsIsZero
+[       OK ] TemporalIou.DisjointIntervalsIsZero (0 ms)
+[ RUN      ] TemporalIou.PartialOverlap
+[       OK ] TemporalIou.PartialOverlap (0 ms)
+[----------] 3 tests from TemporalIou (1 ms total)
+
+[----------] 8 tests from Score
+[ RUN      ] Score.ExactMatchIsTruePositive
+[       OK ] Score.ExactMatchIsTruePositive (1 ms)
+[ RUN      ] Score.MissedGroundTruthIsFalseNegative
+[       OK ] Score.MissedGroundTruthIsFalseNegative (0 ms)
+[ RUN      ] Score.SpuriousPredictionIsFalsePositive
+[       OK ] Score.SpuriousPredictionIsFalsePositive (0 ms)
+[ RUN      ] Score.AgentPairOrderDoesNotMatter
+[       OK ] Score.AgentPairOrderDoesNotMatter (0 ms)
+[ RUN      ] Score.DifferentSegmentsDoNotMatch
+[       OK ] Score.DifferentSegmentsDoNotMatch (0 ms)
+[ RUN      ] Score.LowIouBelowThresholdDoesNotMatch
+[       OK ] Score.LowIouBelowThresholdDoesNotMatch (0 ms)
+[ RUN      ] Score.HigherThresholdNeverIncreasesRecall
+[       OK ] Score.HigherThresholdNeverIncreasesRecall (0 ms)
+[ RUN      ] Score.GreedyMatchingPrefersHigherIouPairing
+[       OK ] Score.GreedyMatchingPrefersHigherIouPairing (0 ms)
+[----------] 8 tests from Score (4 ms total)
+
+[----------] Global test environment tear-down
+[==========] 13 tests from 3 test suites ran. (10 ms total)
+[  PASSED  ] 13 tests.

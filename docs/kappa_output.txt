@@ -1,0 +1,3 @@
+segments=120 items=187
+observed_agreement=0.5134 expected_agreement=0.5049
+COHENS_KAPPA=0.0171

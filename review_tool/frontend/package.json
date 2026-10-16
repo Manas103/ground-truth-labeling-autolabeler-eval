@@ -1,0 +1,11 @@
+{
+  "name": "ground-truth-review-tool-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "tsc -p tsconfig.json"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.4"
+  }
+}

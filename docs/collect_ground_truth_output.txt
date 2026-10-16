@@ -1,0 +1,2 @@
+collected 485 labels from annotator 'annotator_1' -> data/ground_truth_events.tsv
+collected 118 labels from annotator 'annotator_2' -> data/ground_truth_events_annotator2.tsv

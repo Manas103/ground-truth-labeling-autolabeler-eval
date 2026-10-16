@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Driving segment review</title>
+<style>
+  body { font-family: sans-serif; margin: 1rem; }
+  #canvas { border: 1px solid #333; background: #f4f4f4; }
+  label { display: inline-block; min-width: 6rem; }
+  #labelList { font-family: monospace; font-size: 0.85rem; }
+</style>
+</head>
+<body>
+  <h1>Driving segment review</h1>
+
+  <div>
+    <label>Segment</label>
+    <select id="segmentSelect"></select>
+    <label>Annotator</label>
+    <input id="annotatorInput" value="annotator_1" />
+  </div>
+
+  <div>
+    <label>Step</label>
+    <input id="stepSlider" type="range" min="0" max="0" value="0" />
+    <span id="stepLabel">0</span>
+  </div>
+
+  <canvas id="canvas" width="700" height="300"></canvas>
+
+  <h3>Add label</h3>
+  <div>
+    <label>Event class</label>
+    <select id="eventClassSelect">
+      <option>lane_change</option>
+      <option>crossing_paths</option>
+      <option>unprotected_left</option>
+      <option>cut_in</option>
+      <option>hard_brake</option>
+      <option>close_proximity</option>
+      <option>merge</option>
+      <option>high_acceleration</option>
+      <option>cyclist_vehicle_close_approach</option>
+    </select>
+    <label>Agent A</label>
+    <input id="agentAInput" type="number" />
+    <label>Agent B</label>
+    <input id="agentBInput" type="number" />
+    <label>Start step</label>
+    <input id="startStepInput" type="number" />
+    <label>End step</label>
+    <input id="endStepInput" type="number" />
+    <button id="addLabelBtn">Add label</button>
+  </div>
+
+  <h3>Current labels (unsaved until "Save labels")</h3>
+  <ul id="labelList"></ul>
+  <button id="saveLabelsBtn">Save labels</button>
+  <span id="saveStatus"></span>
+
+  <script src="src/app.js" type="module"></script>
+</body>
+</html>

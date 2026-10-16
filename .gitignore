@@ -1,0 +1,37 @@
+node_modules/
+dist/
+build/
+build-*/
+out/
+*.log
+.pytest_cache/
+__pycache__/
+*.pyc
+venv/
+.venv/
+playwright-report/
+test-results/
+
+# Compiled frontend JS (tsc output alongside src/): regenerate with
+#   cd review_tool/frontend && npm run build
+review_tool/frontend/src/*.js
+review_tool/frontend/src/*.js.map
+
+# Generated corpus, render data, labels, and derived event logs: all
+# regenerable from the generator and the scripted annotator. Regenerate with:
+#   python3 generator/make_corpus.py data/corpus.json 600 1
+#   python3 generator/export_render_data.py data/corpus.json review_tool/data/render 5
+#   cd review_tool/backend && npm run build
+#   python3 review_tool/scripted_annotator/annotate.py data/corpus.json --seed 1
+#   python3 autolabeler/run_autolabeler.py data/corpus.json data/predicted_events.tsv
+#   python3 eval/collect_ground_truth.py review_tool/data/labels annotator_1 data/ground_truth_events.tsv
+data/corpus.json
+data/predicted_events.tsv
+data/ground_truth_events.tsv
+data/ground_truth_events_annotator2.tsv
+data/double_labeled_segment_ids.json
+review_tool/data/render/
+review_tool/data/labels/
+
+# Small, committed sample artifacts referenced by the README are the
+# exception (docs/*.txt raw command output).

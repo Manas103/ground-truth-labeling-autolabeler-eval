@@ -1,0 +1,10 @@
+wrote 600 segments to data/corpus.json
+  lane_change: 94 planted instances
+  crossing_paths: 104 planted instances
+  unprotected_left: 100 planted instances
+  cut_in: 89 planted instances
+  hard_brake: 91 planted instances
+  close_proximity: 99 planted instances
+  merge: 98 planted instances
+  high_acceleration: 94 planted instances
+  cyclist_vehicle_close_approach: 114 planted instances
